@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+<h1>
+    Welcome to the Book Store!
+</h1>
+<p>
+    This is the home page of the Book Store. You can add books to your cart, view your cart, and log in. If you are a new user, you can register for an account. If you are an existing user, you can log in.
+</p>
+    {% if context %}
+        <p>{{context}}</p>
+    {% endif %}
+{% endblock %}
